@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Color Reference
+   ========================================================================== */
+
+/**
+ * Teal color (used for headings and backgrounds): #4aaaa5
+ * Regular font color (used for paragraphs and all text besides the headings): #777777
+ * Main header background color: #ffffff
+ * Main header border color: #cccccc
+ * Footer background color: #666666
+ * Main content background color: #ffffff
+ * Main content border color: #dddddd
+*/
+
+
+/* ==========================================================================
+   Global & Text Styles
+============================================================================= */
+
+body,
+a,
+textarea {
+    color: #777777;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+figcaption {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+h1,
+figcaption,
+input[type="submit"] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+h2,
+h3,
+nav a:hover {
+    color: #4aaaa5;
+}
+
+footer,
+li,
+figcaption {
+    text-align: center;
+}
+
+footer,
+input,
+textarea {
+    color: #cccccc;
+}
+
+h1 {
+    padding: 31px;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 28px;
+    border-bottom: 3px solid #dddddd;
+    padding-bottom: 31px;
+    margin-bottom: 21px;
+}
+
+h3 {
+    font-size: 20px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 26px;
+    margin-bottom: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 32px;
+}
+
+
+/* ==========================================================================
+   Header
+============================================================================= */
+
+header {
+    border-bottom: 2px solid #cccccc;
+}
+
+header h1,
+header nav {
+    display: inline-block;
+}
+
+nav {
+    float: right;
+    margin-top: 36px;
+}
+
+nav li {
+    display: table-cell;
+    padding: 0px 16px;
+    border-right: 1px solid #cccccc;
+    font-size: 18px;
+}
+
+nav a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #4aaaa5;
+}
+
+nav li:last-child {
+    padding-right: 0px;
+    border: none;
+}
+
+
+/* ==========================================================================
+   Main Page Layout Elements
+============================================================================= */
+
+header div,
+main div {
+    width: 960px;
+    margin: auto;
+}
+
+main div {
+    padding: 38px 0;
+}
+
+main {
+    background-image: url("../images/arab_tile.png");
+    min-height: calc(100vh - 198px)
+}
+
+section,
+aside {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+section {
+    width: 588px;
+    padding: 42px 31px;
+}
+
+aside {
+    float: right;
+    padding: 32px;
+}
+
+footer {
+    padding: 44px 0;
+    border-top: 6px solid #4aaaa5;
+    background-color: #666666;
+    font-size: 12px;
+}
+
+
+/* ==========================================================================
+   Aside
+============================================================================= */
+
+aside li,
+aside a {
+    display: inline-block;
+}
+
+aside li {
+    width: 60px;
+    margin-right: 8px;
+}
+
+aside li:nth-child(1) {
+    background-color: #333333;
+}
+
+aside li:nth-child(2) {
+    background-color: #0077B5;
+}
+
+aside li:last-child {
+    margin-right: 0;
+    background-color: #f48024;
+}
+
+aside a {
+    width: 100%;
+}
+
+i {
+    padding: 6px 0;
+    color: #ffffff;
+    font-size: 48px;
+}
+
+
+/* ==========================================================================
+   About Me
+============================================================================= */
+
+img {
+    float: left;
+    margin: 10px 28px 0 0;
+}
+
+
+/* ==========================================================================
+   Portfolio
+============================================================================= */
+
+figure {
+    position: relative;
+    display: inline-block;
+    margin: 22px 0;
+}
+
+figure:hover {
+    outline: 2px solid #4aaaa5;
+}
+
+figure:nth-child(even) {
+    margin-right: 33px;
+}
+
+figure:last-child {
+    margin-bottom: 0;
+}
+
+figure img {
+    margin: 0;
+    opacity: 0.75;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+
+/* ==========================================================================
+   Contact
+============================================================================= */
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 11px 0 22px 0;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: #4aaaa5;
+    color: #777777;
+}
+
+textarea {
+    height: 200px;
+    border-radius: 0;
+}
+
+input[type="submit"] {
+    width: 125px;
+    border: none;
+    padding: 16px 0;
+    margin-top: 0;
+    font-size: inherit;
+}
+
+input[type="submit"]:hover,
+aside li:hover {
+    opacity: 0.7;
+    box-shadow: 1px 1px 5px #cccccc;
+}
+
+input[type="submit"]:active,
+aside li:active {
+    opacity: 0.5;
+    box-shadow: 2px 2px 5px #777777;
+    outline: none;
+}
