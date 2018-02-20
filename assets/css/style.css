@@ -304,6 +304,10 @@ aside li:active {
         width: 100%;
     }
 
+    main div {
+        padding: 1px 0;
+    }
+
     h1 {
         width: 100%;
         padding: 32px 0;
@@ -321,6 +325,19 @@ aside li:active {
         display: inline-block;
         width: 33%;
         padding: 0;
+    }
+
+    section,
+    aside {
+        display: block;
+        width: unset;
+        margin: 2%;
+        float: none;
+    }
+
+    img {
+        float: none;
+        width: 100%;
     }
 }
 
