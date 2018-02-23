@@ -208,6 +208,7 @@ i {
 ============================================================================= */
 
 img {
+    width: 250px;
     float: left;
     margin: 10px 28px 0 0;
 }
@@ -298,6 +299,52 @@ aside li:active {
 /* ==========================================================================
    Media Queries
 ============================================================================= */
+@media screen and (max-width: 980px) {
+    header div,
+    main div {
+        width: 750px;
+        margin: auto;
+    }
+
+    section {
+        width: 375px;
+    }
+
+    img {
+        float: none;
+        width: 100%;
+    }
+
+    section p:first-of-type {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header div,
+    main div {
+        width: 95%;
+    }
+
+    main div {
+        padding: 1px 0;
+    }
+
+    section,
+    aside {
+        display: block;
+        width: 90%;
+        margin: 2% auto 4% auto;
+        float: none;
+        padding: 5%;
+    }
+
+    img {
+        float: left;
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 640px) {
     h1 {
         width: 100%;
@@ -318,47 +365,12 @@ aside li:active {
         padding: 0;
     }
 
-    img {
-        float: none;
-        width: 100%;
-    }
-
-    section p:first-of-type {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header div,
-    main div {
-        width: 100%;
-    }
-
-    main div {
-        padding: 1px 0;
-    }
-
-    section,
-    aside {
-        display: block;
-        width: unset;
-        margin: 2% 2% 4% 2%;
-        float: none;
-    }
-
     h1 {
-        margin-left: 2%;
-    }
-
-    nav {
-        margin-right: 2%;
+        margin: 0;
     }
 
     img {
-        width: 50%;
+        float: none;
+        width: 100%;
     }
-}
-
-@media screen and (max-width: 980px) {
-
 }
