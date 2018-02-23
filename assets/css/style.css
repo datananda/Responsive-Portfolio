@@ -315,6 +315,12 @@ aside li:active {
         width: 100%;
     }
 
+    img,
+    figure {
+        float: none;
+        width: 100%;
+    }
+
     section p:first-of-type {
         margin-top: 20px;
     }
@@ -343,9 +349,25 @@ aside li:active {
         float: left;
         width: 50%;
     }
+
+    figure {
+        width: 48%
+    }
+
+    figure:nth-child(even) {
+        margin-right: 3%;
+    }
+
+    figure img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    header div {
+        width: 100%;
+    }
+
     h1 {
         width: 100%;
         padding: 32px 0;
@@ -369,7 +391,8 @@ aside li:active {
         margin: 0;
     }
 
-    img {
+    img,
+    figure {
         float: none;
         width: 100%;
     }
