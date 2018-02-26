@@ -297,6 +297,25 @@ aside li:active {
 
 
 /* ==========================================================================
+   Animation for H1
+============================================================================= */
+@keyframes h2-animation {
+    from   {width: 0%; color: white;}
+    to  {width: 100%; color: #4aaaa5;}
+}
+
+/* The element to apply the animation to */
+h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    animation-name: h2-animation;
+    animation-duration: 2s;
+}
+
+
+
+/* ==========================================================================
    Media Queries
 ============================================================================= */
 @media screen and (max-width: 980px) {
