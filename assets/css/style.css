@@ -149,7 +149,7 @@ aside {
 
 section {
     width: 588px;
-    padding: 42px 31px;
+    padding: 42px 31px 20px 31px;
 }
 
 aside {
@@ -232,13 +232,10 @@ figure:nth-child(even) {
     margin-right: 33px;
 }
 
-figure:last-child {
-    margin-bottom: 0;
-}
-
 figure img {
     margin: 0;
     opacity: 0.75;
+    width: 275px;
 }
 
 figcaption{
@@ -335,6 +332,10 @@ h2 {
         width: 100%;
     }
 
+    figure img {
+        width: 100%;
+    }
+
     section p:first-of-type {
         margin-top: 20px;
     }
@@ -370,10 +371,6 @@ h2 {
 
     figure:nth-child(even) {
         margin-right: 3%;
-    }
-
-    figure img {
-        width: 100%;
     }
 }
 
